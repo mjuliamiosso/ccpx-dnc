@@ -5,12 +5,6 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.container{
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
-}
-
 .margin{
     margin-left: 5%;
     margin-right: 5%;
@@ -25,9 +19,16 @@ nav img{
 }
 
 video{
-    width: 880px;
+    width: 100%;
+    max-width: 880px;
 }
 
+header{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    gap: 20px;
+}
 
 #headerTexto{
     text-align: center;
@@ -59,6 +60,10 @@ video{
     margin-bottom: 60px;
 }
 
+#header-direita{
+    margin-right: 5%;
+}
+
 .timer{
     display: grid;
     grid-auto-flow: column;
@@ -83,4 +88,225 @@ video{
     letter-spacing: 0em;
     text-align: center;
     color: #E33881;
+    margin-bottom: 10px;
+}
+
+#comprar{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+#comprar h3{
+    font-family: Verdana;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0em;
+    color: #F3C61F;
+    margin-bottom: 20px;
+
+}
+
+#comprar-group{
+    display: flex;
+    align-items: center;
+}
+
+#comprar-group button{
+    width: 596px;
+    height: 148px;
+    border-radius: 20px;
+    background-color: #514988;
+    border: 0;
+    margin-left: 100px;
+
+    font-family: Verdana;
+    font-size: 42px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+@media(max-width: 1700px){
+
+    #headerTexto{
+        width: 700px;
+    }
+
+    #headerTexto h1{
+        font-size: 55px;
+    }
+    
+    #headerTexto h3{
+        font-size: 30px;
+    }
+    
+    #headerTexto p{
+        font-size: 26px;
+        width: 600px;
+    }
+
+    .timer-group h1, .timer-group p{
+        font-size: 55px;
+    }
+    
+    #timer-descricao{
+        font-size: 24px;
+    }
+    
+    #card-group img{
+        width: 190px;
+    }
+
+    #comprar-group button{
+        width: 500px;
+        height: 120px;
+        font-size: 35px;
+    }
+}
+
+@media(max-width: 1530px){
+    nav img{
+        width: 160px;
+    }
+
+    #headerTexto{
+        width: 600px;
+    }
+
+    #headerTexto h1{
+        font-size: 50px;
+    }
+    
+    #headerTexto h3{
+        font-size: 28px;
+    }
+    
+    #headerTexto p{
+        font-size: 23px;
+        width: 530px;
+    }
+
+    .timer-group h1, .timer-group p{
+        font-size: 50px;
+    }
+    
+    #timer-descricao{
+        font-size: 28px;
+    }
+    
+
+    #comprar-group button{
+        width: 440px;
+        height: 100px;
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 1464px){
+    #card-group{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+@media(max-width: 1286px){
+    nav img{
+        width: 140px;
+    }
+
+    #headerTexto{
+        width: 500px;
+    }
+
+    #headerTexto h1{
+        font-size: 40px;
+    }
+    
+    #headerTexto h3{
+        font-size: 20px;
+    }
+    
+    #headerTexto p{
+        font-size: 18px;
+        width: 430px;
+    }
+
+    .timer-group h1, .timer-group p{
+        font-size: 40px;
+    }
+    
+    #timer-descricao{
+        font-size: 20px;
+    }
+
+    #card-group{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #card-group img{
+        width: 180px;
+    }
+
+    #comprar-group button{
+        width: 440px;
+        height: 100px;
+        font-size: 26px;
+    }
+}
+
+@media(max-width: 1068px){
+    nav img{
+        width: 120px;
+    }
+
+    #headerTexto{
+        width: 400px;
+    }
+
+    #headerTexto h1{
+        font-size: 35px;
+    }
+    
+    #headerTexto p{
+        font-size: 16px;
+        width: 350px;
+    }
+
+    .timer-group h1, .timer-group p{
+        font-size: 35px;
+    }
+
+    #card-group{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #card-group img{
+        width: 180px;
+    }
+
+    #comprar-group button{
+        width: 440px;
+        height: 100px;
+        font-size: 26px;
+    }
+}
+
+@media(max-width: 810px){
+    nav img{
+        width: 140px;
+    }
+
+    header{
+        grid-auto-flow: row;
+    }
+
+    #headerTexto{
+        width: 100%;
+    }
+
 }
